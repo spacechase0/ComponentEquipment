@@ -1,0 +1,5 @@
+crafting=block.componentStation,block.modificationStand
+modifiers=block.diamondCactus,block.mysteriousOrb,block.bones
+persistium=item.ingot:1,block.ingot:1,item.nugget:1,block.persistiumCrystal
+misc=item.quiver,item.docBook
+arrows=item.arrow

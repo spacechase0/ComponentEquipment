@@ -1,0 +1,26 @@
+[
+{
+  "modid": "SC0_ComponentEquipment",
+  "name": "Component Equipment",
+  "description": "A mod similar to Tinker's Construct.",
+  "version": "0.17.3",
+  "mcversion": "1.7.2",
+  "url": "http://spacechase0.com/minecraft/mods/component-equipment/",
+  "updateUrl": "",
+  "authorList": [
+    "spacechase0"
+  ],
+  "credits": "spacechase0",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+    "after:Thaumcraft",
+    "after:IC2",
+    "after:ThermalExpansion",
+    "after:Forestry",
+    "required-after:SC0_SpaceCore"
+  ]
+}
+]

@@ -39,7 +39,6 @@ public class PersistiumOreGenerator implements IWorldGenerator
             int var7 = this.randomGenerator.nextInt(par4 - par3) + par3;
             int var8 = this.chunk_Z + this.randomGenerator.nextInt(16);
             par2WorldGenerator.generate(this.currentWorld, this.randomGenerator, var6, var7, var8);
-            System.out.println( "Gen @ " + var6 + " " + var7 + " " + var8 ); // TODO remove
         }
     }
 	

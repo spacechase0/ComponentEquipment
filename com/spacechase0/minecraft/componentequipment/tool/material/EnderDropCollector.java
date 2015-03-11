@@ -54,11 +54,11 @@ public class EnderDropCollector implements IBlockDestroyedMonitor
 	@SubscribeEvent
 	public void entityHurt( LivingHurtEvent event )
 	{
-		if ( !( event.source.getEntity() instanceof EntityLiving ) )
+		if ( !( event.source.getEntity() instanceof EntityLivingBase ) )
 		{
 			return;
 		}
-		EntityLiving source = ( EntityLiving ) event.source.getEntity();
+		EntityLivingBase source = ( EntityLivingBase ) event.source.getEntity();
 		
 		ItemStack stack = source.getEquipmentInSlot( 0 );
 		if ( stack == null || !( stack.getItem() instanceof EquipmentItem ) )

@@ -15,6 +15,7 @@ import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.RecipeSorter;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
@@ -475,6 +476,17 @@ public class ComponentEquipment extends BaseMod
 			//GameRegistry.addRecipe( new PaxelCasingRecipes() );
 		}
 		ArrowRecipes.addRecipes();
+
+		RecipeSorter.register( "componentequipment:tools", ToolRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		RecipeSorter.register( "componentequipment:armor", ArmorRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		RecipeSorter.register( "componentequipment:repair", EquipmentRepairRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		RecipeSorter.register( "componentequipment:modifier", ModifierRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		RecipeSorter.register( "componentequipment:partCasing", PartCasingRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		RecipeSorter.register( "componentequipment:caseTool", CaseToolRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		if ( config.get( "general", "canCraftPaxel", true ).getBoolean( true ) )
+		{
+			RecipeSorter.register( "componentequipment:paxel", PaxelRecipes.class, RecipeSorter.Category.SHAPELESS, "" );
+		}
 	}
 	
 	private void registerEntities()

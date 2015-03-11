@@ -28,7 +28,7 @@ import forestry.api.core.IArmorNaturalist;
                          	@Optional.Interface( iface = "thaumcraft.api.nodes.IRevealer", modid = "Thaumcraft" ),
                          	@Optional.Interface( iface = "thaumcraft.api.IGoggles",        modid = "Thaumcraft" ),
                          	@Optional.Interface( iface = "forestry.api.apiculture.IArmorApiarist", modid = "Forestry" ),
-                         	@Optional.Interface( iface = "forestry.api.core.IArmorNaturalist",     modid = "Forestry" ),
+                         	@Optional.Interface( iface = "forestry.api.core.IArmorNaturalist",     modid = "Forestry" )
                          } )
 public class ArmorItem extends EquipmentItem implements ISpecialArmor, IRevealer, IGoggles, IArmorApiarist, IArmorNaturalist
 {

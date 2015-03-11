@@ -38,7 +38,7 @@ import cpw.mods.fml.common.Optional;
 
 @Optional.InterfaceList( {
                          	@Optional.Interface( iface = "ic2.api.item.ISpecialElectricItem", modid = "IC2" ),
-                         	@Optional.Interface( iface = "cofh.api.energy.IEnergyContainerItem", modid = "CoFHCore" ),
+                         	@Optional.Interface( iface = "cofh.api.energy.IEnergyContainerItem", modid = "CoFHCore" )
                          } )
 public abstract class EquipmentItem extends SimpleItem implements ISpecialElectricItem, IEnergyContainerItem
 {
